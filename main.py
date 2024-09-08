@@ -15,3 +15,4 @@ if __name__ == "__main__":
     print(id(s3))
 
 
+#جلسه امروز در مورد factory وabstract factory هست
