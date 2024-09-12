@@ -12,7 +12,9 @@ class HumanPlayer(PlayerBase):
         return m
 class SystemPlayer(PlayerBase):
     def move(self):
-        return choice(self.chocies)
+        c = choice(self.chocies)
+        print(f"system move : {c}")
+        return c
 
 
 class Game:
@@ -20,6 +22,7 @@ class Game:
         if game_type == "s":
             p1 = HumanPlayer()
             p2 = SystemPlayer()
+            
         elif game_type == "m":
             p1 = HumanPlayer()
             p2 = HumanPlayer()
